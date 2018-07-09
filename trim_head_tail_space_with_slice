@@ -1,0 +1,18 @@
+def trim_way0(s):
+  i=0
+  j=-1
+  while(1):
+    if s[i]!=' ' and s[j]!=' ':
+      return s[i:len(s)+j+1]
+    if s[i]==' ':
+      i+=1
+    if s[j]==' '
+      j-=1
+      
+def trim_way1(s):
+    if s[:1] != ' ' and s[-1:] != ' ':
+        return s
+    elif s[:1] == ' ':
+        return trim(s[1:])
+    else:
+        return trim(s[:-1])
